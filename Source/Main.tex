@@ -1,0 +1,66 @@
+\documentclass[conference]{IEEEtran}
+
+%\renewcommand{\baselinestretch}{1.001}
+
+% Pacote para escrever matrizes
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%Package for the DOI paper insertion
+% DOI
+%\acmDOI{10.18293/SEKE2021-108}
+\usepackage{textpos}
+\usepackage{comment}
+
+\usepackage{authblk}
+\renewcommand*{\Authand}{\authorcr}
+\renewcommand*{\Authands}{\newline} %%new line after each author
+\renewcommand*{\Affilfont}{\normalsize}
+\renewcommand*{\Authfont}{}    % make author names boldface    
+\setlength{\affilsep}{0.1em}   % set the space between author and affiliation
+
+\pagenumbering{gobble}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{doi}{\lfoot{DOI reference number: 10.18293/SEKE2021-108}}
+
+\begin{document}
+
+\title{A Comparative Study of Psychometric Instruments in Software Engineering}
+
+\author[1]{G. Guimarães}
+\author[1]{M.Perkusich}
+\author[1]{D. Albuquerque}
+\author[2] {E.n Guimarães}
+\author[1]{H. Almeida}
+\author[1]{D. Santos}
+\author[1]{A. Perkusich}
+\affil[1]{Federal University of Campina Grande - Intelligent Software Engineering Group (ISE/Virtus) - Paraiba, Brazil}
+\affil[2]{The Pennsylvania State University - Malvern, Pennsylvania - USA}
+
+
+
+\maketitle
+\thispagestyle{doi}
+\input{0-Abstract.tex}
+
+\begin{IEEEkeywords}
+Human Aspects, Social Aspects, Personality, Software Engineering, Psychometric Instruments.
+\end{IEEEkeywords}
+
+
+\input{1-Introduction.tex}
+\input{2-Background.tex}
+\input{3-Methodology.tex}
+\input{4-Results.tex}
+\input{5-Threats.tex}
+\input{6-Conclusions.tex} 
+
+\bibliographystyle{IEEEtran}
+\bibliography{sigproc} 
+
+\end{document}

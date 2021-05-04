@@ -1,0 +1,38 @@
+A total of 25 software development teams from the Virtus and Analytics labs participated in this survey - five teams contributed in two sprints. The projects these teams were working on are carried out in partnership with multinational technology companies to develop software products. These projects are managed using the Scrum method of agile development. A total of 162 members of these teams were interviewed, from different positions (i.e., developers, quality analysts, technical leaders, and managers).
+
+To measure the variables observed in the Lindsjørn et al. \cite{lindsjorn2016teamwork} model, we used the arithmetic mean of the responses related to the input questions of a given variable. As the unit of analysis of this research is the team, we calculated the average value of the responses of the team members to have the value of the variable for a team.
+
+The latent variable (TWQ) was measured using equation \ref{equation:twq}, proposed in the study by Lindsjørn et al. \cite{lindsjorn2016teamwork}, in which the observable variables are multiplied by their respective errors and path coefficient.
+
+The variables of the model in BN were measured by inserting the responses of each team member in the input node through the node probability tables (NPT). We chose to choose the mean as a measure of central tendency for the distribution of BN variables so that there is a symmetry of analysis, since it is also used in the model by Lindsjørn et al. \cite{lindsjorn2016teamwork}.
+
+The values returned by the models then in different scales, therefore, we need to standardize. Since the scale of the Freire et al. \cite{freire2018bayesian} is [0, 1], we will normalize the outputs of the Lindsjørn et al. \cite{lindsjorn2016teamwork} model to leave on the same scale. Normalization was performed using Equation \ref{equation:normalized}, what ${x_i}$ represents the value of a given variable, \textit{min(x)} and \textit{max(x)} represent the minimum and maximum values of the scale, respectively.
+
+\begin{equation}
+  normalized Value = \frac{x_i - min(x)}{max(x) - min(x)} 
+\label{equation:normalized}
+\end{equation}
+
+\subsection{Experiment Design}
+\label{experiment_design}
+
+To carry out this comparative analysis, the first step will be to map the variables of the Freire et al. \cite{freire2018bayesian} models to the Lindsjørn et al. \cite{lindsjorn2016teamwork} model, one by one, using the similarity of definitions as a criterion. Once this is done, we will collect data through interviews using the questionnaires proposed in each study. With this data in hand, the analysis will be performed using Mean Relative Error (MRE) to measure the level of agreement between the mapped variables, and thus verify how similar they are. More detailed information on the analysis, data collection process and instruments used will be described in the following subsections.
+
+\subsection{Calculation of the MRE}
+\label{mre}
+
+When two methods are compared and neither provides an unambiguously correct measure, we try to assess the degree of agreement. The correct statistical approach is not obvious, however many studies provide the correlation coefficient (\textit{r}) between the results of the two measurement methods with an agreement indicator \cite{altman1983measurement}, but there are reasons for not using this statistical approach, they are: \textit{r} measures the strength of a relationship between two variables, not the agreement between them; a change in the measurement scale does not affect the correlation, but it certainly affects the agreement; the correlation depends on the range of the true quantity in the sample. If it is broad, the correlation will be greater than if it is close; data that appear to be in the poor agreement can produce quite high correlations.
+
+We proposed an alternative analysis using MRE as an indicator of agreement between the variables in the base models of this article. We chose to use the relative error because it allows us to understand the comparative ratio between the variables in the models and gives us a direct view of the different scales between the compared values. 
+
+Equation \ref{equation:mre} represents the formula used to calculate the MRE, where \textit{n} represents the sample size (number of teams), \textit{x} and \textit{y} represent the values calculated for the variable in question in the Lindsjørn et al. \cite{lindsjorn2016teamwork} and Freire et al. \cite{freire2018bayesian} models, respectively.
+
+\begin{equation}
+   Mean relative diference(x,y) = \sum \frac{1}{n} \left | \frac{ x - y}{max(x,y)} \right |
+\label{equation:mre}
+\end{equation}
+
+\subsection{Questionnaires}
+\label{questionnaires}
+
+The questionnaire by Lindsjørn et al. \cite{lindsjorn2016teamwork} contains 61 questions, addressing the constructs proposed in the model. For each item in the questionnaire, respondents were asked to indicate their agreement with the statement on a scale of one (strongly disagree) to five (strongly agree) from a personal point of view (five-point response scale). The questionnaire by Freire et al. \cite{freire2018bayesian} consists of nine questions, each of which refers to a network input node. The answers follow the Likert scale pattern and are distributed as follows: false, more false than true, neither true nor false, more true than false and true.
